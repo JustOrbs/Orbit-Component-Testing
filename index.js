@@ -18,7 +18,7 @@ client.on("messageCreate", message => {
 
   if(message.content === "!lfg") {
     let embed = new Discord.MessageEmbed()
-    .setAuthor(message.author.username, message.author.displayAvatarURL())
+    .setAuthor({name: message.author.username, iconURL: message.author.displayAvatarURL()})
     .setTitle("Welcome to the Orbit LFG platform")
     .setDescription("Please select an option")
     .setColor("#ffa500")
